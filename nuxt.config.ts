@@ -1,4 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true }
-})
+  css: ["~/assets/css/globals.css"],
+  ssr: false,
+  devtools: { enabled: true },
+  modules: ["@nuxtjs/tailwindcss"],
+  devServer:{
+    port: 8000
+  }
+});
